@@ -405,6 +405,7 @@
         <div class="atext">${esc(a.blurb)}</div>
         ${roleChips(a.core)}
         ${a.caution ? `<div class="note">⚠ ${esc(a.caution)}</div>` : ''}
+        ${a.cardTip ? `<div class="note">🃏 ${esc(a.cardTip)}</div>` : ''}
       </div>`)).join('');
   }
 
@@ -441,6 +442,7 @@
           <div class="atext">${esc(r.blurb)}</div>
           ${roleChips(r.squad)}
           ${r.caution ? `<div class="note">⚠ ${esc(r.caution)}</div>` : ''}
+          ${r.cardTip ? `<div class="note">🃏 ${esc(r.cardTip)}</div>` : ''}
           ${r.lockedCount ? `<div class="note">+${r.lockedCount} more pick${r.lockedCount > 1 ? 's' : ''} available for this archetype with Eggspansion on</div>` : ''}
         </div>`)).join('');
     }
@@ -565,6 +567,7 @@
           <div class="aname">Closest archetype: ${esc(am.title)} <span class="stage-badge">${esc(am.tag)}</span></div>
           <div class="atext" style="margin-top:2px;">${am.matched.length} chicken${am.matched.length > 1 ? 's' : ''} on this team fit${am.matched.length > 1 ? '' : 's'} this archetype</div>
           ${roleChips(am.matched)}
+          ${am.cardTip ? `<div class="note">🃏 ${esc(am.cardTip)}</div>` : ''}
         </div>`);
     }
 

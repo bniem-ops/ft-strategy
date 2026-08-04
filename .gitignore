@@ -9,4 +9,6 @@ Thumbs.db
 data/chickens.json
 data/predators.json
 data/weather.json
+data/bonus-cards.json
+data/grubs.json
 data/app-data.js

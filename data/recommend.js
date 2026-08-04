@@ -23,66 +23,79 @@
     // ---- Solo (1 player) ----
     { id: 'solo-attrition', title: 'Attrition Fighter', tag: 'Solo', resilience: 'medium',
       core: ['Wyatt Chirp'], minPlayers: 1, maxPlayers: 1,
-      blurb: 'Payback backfills a missed production roll with a free meal, and Thick Feathers shaves down every return hit — a self-sufficient grind pick that needs no teammates to function.' },
+      blurb: 'Payback backfills a missed production roll with a free meal, and Thick Feathers shaves down every return hit — a self-sufficient grind pick that needs no teammates to function.',
+      cardTip: 'Roly Poly\'s permanent Reward (when attacking, 4-6 reduces the Predator\'s return attack by 1) stacks with a grinder who\'s always trading blows solo — worth prioritizing as a kill target early.' },
     { id: 'solo-weatherproof', title: 'Weather-Proof Grinder', tag: 'Solo', resilience: 'medium',
       core: ['Cumberbill Rockefeather'], minPlayers: 1, maxPlayers: 1,
-      blurb: 'By Stage 3 (Dandy) he\'s immune to ALL negative weather — solo play means you can\'t split weather risk across teammates, so removing the whole threat axis single-handedly is huge.' },
+      blurb: 'By Stage 3 (Dandy) he\'s immune to ALL negative weather — solo play means you can\'t split weather risk across teammates, so removing the whole threat axis single-handedly is huge.',
+      cardTip: 'Lunar Moth\'s Reward (ignore weather effects until the next card is drawn) covers the gap before you\'ve leveled to Stage 3\'s full immunity — a strong early kill while you\'re still a Chick or Pullet/Cockerel.' },
     { id: 'solo-egg-loop', title: 'Egg Economy Loop', tag: 'Solo', resilience: 'medium', requiresExpansion: true,
       core: ['Princess Layer'], minPlayers: 1, maxPlayers: 1,
-      blurb: 'Doubles her own Lay Egg yield, funds Extra Action refreshes, and spends eggs to shrug off damage — a fully closed-loop kit with no "nearby teammate" abilities going to waste solo.' },
+      blurb: 'Doubles her own Lay Egg yield, funds Extra Action refreshes, and spends eggs to shrug off damage — a fully closed-loop kit with no "nearby teammate" abilities going to waste solo.',
+      cardTip: 'Wild Grain has 0 health — a free kill — and its Reward is straight food, pure value for a build that\'s already engineered around resource surplus.' },
 
     // ---- Squads (2+) ----
     { id: 'balanced-core', title: 'Balanced Core', tag: 'All-Rounder', resilience: 'high',
       core: ['Atilla the Hen', 'Beowing', 'Princess Layer', 'General Tso', 'Shellock Holmes', 'Aracorn, Heir of Condor', 'Wingston Coophill', 'Cluck Norris'],
       minPlayers: 2, maxPlayers: 6,
-      blurb: 'One tank, one universal buffer, one economy/control engine, then utility and a protected striker as the group grows. The safe, cohesive default if you don\'t want to lean into a theme.' },
+      blurb: 'One tank, one universal buffer, one economy/control engine, then utility and a protected striker as the group grows. The safe, cohesive default if you don\'t want to lean into a theme.',
+      cardTip: 'No one in this core is a dedicated card hoarder — Large Spider\'s permanent Reward (no Bonus Card hand limit) patches that gap for whoever lands the kill.' },
 
     { id: 'grub-guild', title: 'Grub Guild', tag: 'Grub Synergy', resilience: 'high',
       core: ['Shellock Holmes', 'Eggatha Christie', 'Atilla the Hen', 'Beowing', 'J.R.R. Yolkien', 'Princess Layer'],
       minPlayers: 2, maxPlayers: 6,
-      blurb: 'Shellock Holmes strikes either Grub from anywhere and turns Grub hearts into a damage buffer; Eggatha\'s Tomb Raider keeps pressuring discarded Grubs. Doubles as prep work for a Sheriff of Rottingham fight, whose return attack scales off Grub deck health.' },
+      blurb: 'Shellock Holmes strikes either Grub from anywhere and turns Grub hearts into a damage buffer; Eggatha\'s Tomb Raider keeps pressuring discarded Grubs. Doubles as prep work for a Sheriff of Rottingham fight, whose return attack scales off Grub deck health.',
+      cardTip: 'This is the one archetype built to actually clear both Grub decks efficiently — prioritize Dragonfly (Reward: draw 3 Bonus Cards, keep 2, give 1 to a teammate) and Large Spider (permanent no-hand-limit); both compound with Shellock Holmes and J.R.R. Yolkien\'s card-heavy kits.' },
 
     { id: 'egg-economy', title: 'Egg Economy Engine', tag: 'Economy', resilience: 'low',
       core: ['General Tso', 'Annie Yolkley', 'Cluckleberry Finn', 'Beowing', 'Princess Layer', 'J.R.R. Yolkien'],
       minPlayers: 2, maxPlayers: 6,
-      blurb: 'Annie Yolkley and Cluckleberry Finn overproduce and inflate the value of eggs; General Tso (or J.R.R. Yolkien) spends the surplus to fix bad die rolls on demand. A reliability engine built on economic surplus rather than raw stats.' },
+      blurb: 'Annie Yolkley and Cluckleberry Finn overproduce and inflate the value of eggs; General Tso (or J.R.R. Yolkien) spends the surplus to fix bad die rolls on demand. A reliability engine built on economic surplus rather than raw stats.',
+      cardTip: 'Beehive and Centipede both Reward +2 meals or +3 food on a kill — direct fuel for a team that\'s already converting surplus into reliability.' },
 
     { id: 'universal-buff', title: 'Universal Buff Core', tag: 'Support', resilience: 'high',
       core: ['Beowing', 'Atilla the Hen', 'General Tso', 'Madam Chickovsky', 'Wyatt Chirp', 'Cluck Norris'],
       minPlayers: 2, maxPlayers: 6,
-      blurb: 'Battle Cry boosts every nearby teammate\'s dice on ANY roll — not just attacks — while weakening the Predator\'s. Build around Beowing and stack high-attack, roll-dependent teammates who benefit most.' },
+      blurb: 'Battle Cry boosts every nearby teammate\'s dice on ANY roll — not just attacks — while weakening the Predator\'s. Build around Beowing and stack high-attack, roll-dependent teammates who benefit most.',
+      cardTip: 'Beowing already buffs every nearby roll — a Bonus Card that lets you reroll (your own or a teammate\'s) stacks on top of that boosted result instead of just replacing bad luck, so hang onto one if you draw it.' },
 
     { id: 'weather-fortress', title: 'Weather-Immune Fortress', tag: 'Weather Denial', resilience: 'medium',
       core: ['Cumberbill Rockefeather', 'Madam Chickovsky', 'Eggatha Christie', 'Chickira', 'Aracorn, Heir of Condor', 'Beowing'],
       minPlayers: 2, maxPlayers: 6,
-      blurb: 'Stacks weather immunities (Cumberbill goes fully immune by Stage 3; Madam Chickovsky and Eggatha cover specific cards) plus Chickira\'s ability to force a re-draw on whatever\'s left. Denies an entire threat category rather than out-fighting it.' },
+      blurb: 'Stacks weather immunities (Cumberbill goes fully immune by Stage 3; Madam Chickovsky and Eggatha cover specific cards) plus Chickira\'s ability to force a re-draw on whatever\'s left. Denies an entire threat category rather than out-fighting it.',
+      cardTip: 'Lunar Moth\'s Reward and the Bonus Card that grants one turn of weather immunity both reinforce a team that\'s already denying weather as a threat — low priority to spend on this team, since you have redundancy already; save them for a teammate outside this core instead.' },
 
     { id: 'passive-sustain', title: 'Passive Sustain', tag: 'Sustain', resilience: 'medium',
       core: ['Beowing', 'Chickira', 'Madam Chickovsky', 'Wyatt Chirp', 'Cumberbill Rockefeather', 'Shellock Holmes'],
       minPlayers: 2, maxPlayers: 6,
       caution: 'No dedicated Damage role in the core lineup — plan on spending real actions/food on Attack rather than leaning on a big hitter\'s kit.',
-      blurb: 'Three different passive heal triggers stacked on one team — Beowing\'s Berserker, Chickira\'s Shake it Off, and Madam Chickovsky\'s Ladies\' Aid — so the squad barely needs to spend an action on Heal at all. Wyatt Chirp adds a real Tank and Shellock Holmes covers Grub Control, the two roles the core trio is missing on its own.' },
+      blurb: 'Three different passive heal triggers stacked on one team — Beowing\'s Berserker, Chickira\'s Shake it Off, and Madam Chickovsky\'s Ladies\' Aid — so the squad barely needs to spend an action on Heal at all. Wyatt Chirp adds a real Tank and Shellock Holmes covers Grub Control, the two roles the core trio is missing on its own.',
+      cardTip: 'Earthworm\'s Reward (heal up to 3 of a teammate\'s health) is a free top-off that fits right in on a team already leaning on passive heal triggers instead of spending actions on Heal.' },
 
     { id: 'tank-glasscannon', title: 'Tank & Glass Cannon', tag: 'Tank + Damage', resilience: 'high',
       core: ['Atilla the Hen', 'Wingston Coophill', 'Broods Lee', 'Cluck Norris', 'Beowing', 'Shellock Holmes'],
       minPlayers: 2, maxPlayers: 6,
-      blurb: 'Atilla intercepts damage meant for your fragile pieces and gets paid 2 eggs every time he does. Wingston punches above his stat line if protected; Broods Lee gets stronger the longer the team stays wounded.' },
+      blurb: 'Atilla intercepts damage meant for your fragile pieces and gets paid 2 eggs every time he does. Wingston punches above his stat line if protected; Broods Lee gets stronger the longer the team stays wounded.',
+      cardTip: 'Wasp Swarm\'s Reward — dodge the attack, then the Predator\'s own base return attack gets dealt back to it — is a big tempo swing worth the risk for a team already leaning into aggressive trades.' },
 
     { id: 'mobility-recon', title: 'Mobility & Recon', tag: 'Utility', resilience: 'low',
       core: ['Cumberbill Rockefeather', 'Madam Chickovsky', 'Wingston Coophill', 'Shellock Holmes', 'Aracorn, Heir of Condor'],
       minPlayers: 2, maxPlayers: 5,
-      blurb: 'Built around board coverage instead of raw combat: free movement, full Outside-action flexibility, and grub strikes from any location. Good for a team that wants to split up and multitask rather than deathball one location.' },
+      blurb: 'Built around board coverage instead of raw combat: free movement, full Outside-action flexibility, and grub strikes from any location. Good for a team that wants to split up and multitask rather than deathball one location.',
+      cardTip: 'Garden Snail\'s permanent Reward (tag along whenever a teammate moves) is a natural fit for a team already built around covering ground together instead of planting in one spot.' },
 
     { id: 'card-control', title: 'Card Control Engine', tag: 'Control', resilience: 'low',
       core: ['General Tso', 'Shellock Holmes', 'Beowing', 'J.R.R. Yolkien', 'Cluck Norris', 'Princess Layer'],
       minPlayers: 2, maxPlayers: 6,
       caution: 'Hard-countered by Chicksune, whose Stage 1 effect makes the whole team immune to Bonus Card effects — this archetype goes quiet against her specifically.',
-      blurb: 'Draw-heavy, card-selection-heavy kit (Foresight, a bigger hand, egg-funded re-rolls) for players who like maximizing information and mitigating bad luck.' },
+      blurb: 'Draw-heavy, card-selection-heavy kit (Foresight, a bigger hand, egg-funded re-rolls) for players who like maximizing information and mitigating bad luck.',
+      cardTip: 'Mosquitoes\' Reward (+2 Bonus Cards) is close to a must-kill for a team already built around maximizing card selection and information.' },
 
     { id: 'glass-cannon-gambit', title: 'Glass Cannon Gambit', tag: 'High Variance', resilience: 'low',
       core: ['Cluck Norris', 'Broods Lee', 'Wingston Coophill', 'Chickira', 'General Tso', 'Cluckleberry Finn'],
       minPlayers: 2, maxPlayers: 6,
-      blurb: 'No dedicated tank — everyone leans into taking damage for resources or buffs. Higher skill ceiling and higher variance than the other archetypes, but a blast if your group likes risk over reliability.' },
+      blurb: 'No dedicated tank — everyone leans into taking damage for resources or buffs. Higher skill ceiling and higher variance than the other archetypes, but a blast if your group likes risk over reliability.',
+      cardTip: 'This archetype already treats its own health as a resource — Bonus Cards that trade -2 health for eggs, meals, or enemy damage are pure upside here instead of the risk they\'d be on a more defensive team.' },
   ];
 
   const RESILIENCE_RANK = { high: 0, medium: 1, low: 2 };
@@ -156,7 +169,7 @@
       }
       return {
         id: archetype.id, title: archetype.title, tag: archetype.tag,
-        blurb: archetype.blurb, caution,
+        blurb: archetype.blurb, caution, cardTip: archetype.cardTip || null,
         squad, covers,
         lockedCount: locked.length,
       };
@@ -185,6 +198,7 @@
     return {
       id: top.archetype.id, title: top.archetype.title, tag: top.archetype.tag,
       matched: top.matched, total: top.archetype.core.length,
+      cardTip: top.archetype.cardTip || null,
     };
   }
 

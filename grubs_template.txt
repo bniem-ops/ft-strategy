@@ -1,0 +1,65 @@
+FLOCK TOGETHER — GRUB CARD DATA (24 total)
+=================================================================
+Instructions: Grubs are a single 24-card pool, evenly split 12/12 into two
+shared location decks (Inside/Outside) at deal time and again whenever both
+decks empty out and get reshuffled — no individual card is permanently
+"Inside" or "Outside," so there's no Location field to transcribe here; the
+12/12 split is just a dealing rule the engine applies at runtime. Grubs
+live in these shared decks rather than a player's hand — no hand limit, and
+one gets discarded from either deck (player's choice) at the end of every
+day.
+
+Every Grub has Health, and (per confirmation) killing one grants the
+attacker who lands the final blow a Reward/benefit — same shape as a
+Predator's Loot Drop, just card-specific instead of species-specific. Most
+Grubs also have a dice-roll Effect that triggers on attack (a defend/
+retaliation roll, e.g. "1-2: Lose 1 health") — some of these are minor
+damage-back, some may say "nothing," and some cards may have no roll effect
+at all.
+
+One line per card, in this format:
+
+  N. Name - Health: <N> - Effect: <roll text, or "none"> - Reward: <text>
+
+Health: the heart/damage-capacity value printed on the card.
+
+Effect: the dice-roll defend/retaliation text triggered when the Grub is
+attacked, copied exactly as printed (e.g. "1-2: Lose 1 health"). If a card
+has no such effect, write "none" — don't guess or invent one.
+
+Reward: the benefit granted to whoever lands the killing blow, copied
+exactly as printed.
+
+Leave a field as [?] if you can't find/read it and want to skip for now —
+partial progress is fine, this file gets fully re-read each time you say
+it's updated.
+
+Example (already filled in below as card 1): Scorpion - Health: 1 -
+Effect: 1-2: Lose 1 health - Reward: For one attack, you may ignore all
+Predator roll effects
+=================================================================
+
+1. Scorpion - Health: 1 - Effect: 1-2: Lose 1 health - Reward: For one attack, you may ignore all Predator roll effects
+2. Lunar Moth - Health: 1 - Effect: 1: Miss your attack - Reward: Ignore weather effects until a new weather card is drawn
+3. Slug - Health: 0 - Effect: 1: Miss your attack - Reward: Heal 1 health
+4. Cocoon - Health: 1 - Effect: 1: Miss your attack - Reward: +3 food to a teammate
+5. Dung Beetle - Health: 2 - Effect: 1: Miss your attack 2: Lose 1 health  - Reward: Take a bonus card from the discard pile
+6. Dragonfly - Health: 2 - Effect: 1: Lose 1 health - Reward: Draw 3 Bonus Cards. Keep 2, give 1 to a teammate
+7. Four Leaf Clover - Health: 0 - Effect: 6: +1 health - Reward: For 1 turn, you may perform all actions Outside
+8. Praying Mantis - Health: 2 - Effect: 1-2: Miss your attack - Reward: Dodge an enemy attack (and  effects)
+9. Caterpillar - Health: 2 - Effect: 1: Miss your attack - Reward: +1 to your egg production rolls. Permanent Upgrade
+10. Roly Poly - Health: 2 - Effect: 1: Miss your attack - Reward: When attacking, roll. 4-6: Predator return attack is -1. Permanent Upgrade
+11. Garden Snail - Health: 2 - Effect: 1: Miss your attack - Reward: You may tag along when a teammate moves. Permanent Upgrade
+12. Lucky Cricket - Health: 1 - Effect: 1: Miss your attack - Reward: Copy another player's Bonus Card effect
+13. Earthworm - Health: 2 - Effect: 1: Miss your attack - Reward: Heal up to 3 of your teammate's health
+14. Beehive - Health: 1 - Effect: 1-2: Lose 1 health - Reward: +2 meals or +3 food
+15. Ladybug - Health: 3 - Effect: Lose 1 health - Reward: Roll 3 times. Use the 3 numbers to gain eggs, gain food, and lose health
+16. Spotted Lanternfly - Health: 1 - Effect: 1: Miss your attack - Reward: Pick the outcome of any die roll
+17. Mosquitoes - Health: 1 - Effect: 1: Miss your attack - Reward: +2 Bonus Cards
+18. Wild Grain - Health: 0 - Effect: None - Reward: +2 food
+19. Centipede - Health: 1 - Effect: 1-2: Miss your attack - Reward: +2 meals or +3 food
+20. Wasp Swarm - Health: 4 - Effect: Lose 1 health - Reward: Dodge Predator attack. Then base Predator return attack gets dealt to the Predator
+21. Ant Pile - Health: 1 - Effect: 1-3: Lose 1 health - Reward: -2 health to any enemy
+22. Firefly - Health: 1 - Effect: 1: Miss your attack - Reward: Redraw weather OR call for an Egg Exchange
+23. Lizard - Health: 2 - Effect: 1: Miss your attack - Reward: Your Forage action produces an additional food until the next weather
+24. Large Spider - Health: 2 - Effect: 1: Lose 1 health - Reward: No Bonus Card hand limit. Permanent upgrade
